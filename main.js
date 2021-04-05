@@ -10,9 +10,11 @@ const settings = {
 		"x-rapidapi-host": "call-of-duty-modern-warfare.p.rapidapi.com"
 	}
 };
-
+var input;
 $.ajax(settings).done(function (response) {
 	console.log(response);
+input = select('#warzoneId');
+console.log(input.value());
 //$.ajax(settings).done(function(data){
 	//console.log(data);
 //})
