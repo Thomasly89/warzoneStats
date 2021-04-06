@@ -9,16 +9,23 @@
   <body>
     <p>
     Warzonegamertag<input id="warzoneId" placeholder="Nick+id"></input>
-    <select>
-        <option>Playstation</option>
-        <option>Steam</option>
-        <option>Xbox</option>
-        <option>BattleNet</option>
-        <option>Activision ID</option>
-        <option>Activision tag</option>
+    <select id="warzoneMode">
+        <option value="warzone" selected>Warzonestats</option>
+        <option value="warzone-matches">Warzone matches</option>
+        <option value="multiplayer">Multiplayer Stats</option>
+        <option value="leaderboard">Multiplayer leaderboard</option>
+        <option value="multiplayer-matches">Multiplayer matches</option>
+    </select>
+    <select id="platform">
+        <option value="psn">Playstation</option>
+        <option value="steam">Steam</option>
+        <option value="xbl">Xbox</option>
+        <option value="battle" selected>BattleNet</option>
+        <option value="uno">Activision ID</option>
+        <option value="acti">Activision tag</option>
     </select>
     <br/>
-    <button id="submit">submit</button>
+    <button type="button"id="submit">submit</button>
   </p>
   </body>
   </html>
