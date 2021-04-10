@@ -1,3 +1,14 @@
+var link = "https://call-of-duty-modern-warfare.p.rapidapi.com/";
+var gamemode;
+var userID;
+var wzplatform
+
+function setup(){
+	var button = select("#submit");
+	button.mousePressed(getInfo);
+	console.log(link);
+}
+
 const settings = {
 	"async": true,
 	"crossDomain": true,
@@ -17,12 +28,14 @@ function getSelectedValue(){
 
 }
 
-var input = select("#warzoneId");
-$.ajax(settings).done(function (response) {
-	console.log(response);
-	//console.log(getSelectedValue(strUser));
-	console.log(input.value());
-//$.ajax(settings).done(function(data){
-	//console.log(data);
-//})
+//var input = select("#warzoneId");
+function getInfo(){
+	$.ajax(settings).done(function (response) {
+		console.log(response);
+		//console.log(getSelectedValue(strUser));
+		console.log(input.value());
+		//$.ajax(settings).done(function(data){
+		//console.log(data);
+		//})
 });
+}
